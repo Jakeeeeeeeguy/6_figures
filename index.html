@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .pdf-link {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Simple Website</h1>
+        <p>This is a simple website with a title, some text, and a PayPal button to purchase the PDF.</p>
+        
+        <!-- Replace this with the PayPal button code -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="josmith15@hotmail.com">
+            <input type="hidden" name="item_name" value="The TEN simple Steps to making 6 Figures!">
+            <input type="hidden" name="amount" value="19.00">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="return" value="http://www.yoursite.com/thankyou.html">
+            <input type="submit" value="Buy Now">
+        </form>
+    </div>
+</body>
+</html>
